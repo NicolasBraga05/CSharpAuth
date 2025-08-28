@@ -1,0 +1,24 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.cache
+*.tmp
+
+# Publish directory
+**/publish/
+
+# Sensitive configs (se tiver segredos)
+appsettings.Development.json
