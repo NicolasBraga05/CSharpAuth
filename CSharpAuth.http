@@ -1,0 +1,6 @@
+@CSharpAuth_HostAddress = http://localhost:5287
+
+GET {{CSharpAuth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
