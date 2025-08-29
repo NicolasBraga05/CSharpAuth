@@ -1,0 +1,18 @@
+{
+  "semi": true,
+  "tabWidth": 4,
+  "useTabs": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "printWidth": 120,
+  "quoteProps": "as-needed",
+  "proseWrap": "preserve",
+  "jsxSingleQuote": false,
+  "overrides": [
+    { "files": ".json", "options": { "tabWidth": 2 } },
+    { "files": ".yml", "options": { "tabWidth": 2 } }
+  ]
+}

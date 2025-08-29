@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpAuth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5c296f8aea7070aded62ebc6c9ad0ff864799d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpAuth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpAuth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
