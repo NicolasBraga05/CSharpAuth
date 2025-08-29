@@ -11,6 +11,8 @@ namespace CSharpAuth.Dtos
         public string Message { get; set; }
 
         public UserDto User { get; set; }
+
+        public List<UserDto> Users { get; set; }
     }
 
     public class UserDto
