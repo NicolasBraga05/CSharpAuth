@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using CSharpAuth.Dtos;
 using CSharpAuth.Database;
+using CSharpAuth.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+
 
 namespace CSharpAuth.Controllers
 {
@@ -22,20 +19,33 @@ namespace CSharpAuth.Controllers
             _appDbContext = appDbContext;
         }
 
-        public UserController(ILogger<UserController> logger)
+        [HttpPost]
+        public async Task<IActionResult> AddUser(User user)
         {
-            _logger = logger;
-        }
+            var existUser = await _appDbContext.Project.FindAsync(user.Id);
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+            if (existUser != null)
+            {
+                return Conflict(new { message = "Usuário já existe." });
+            }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
+            _appDbContext.Project.Add(user);
+            await _appDbContext.SaveChangesAsync();
+
+            var userDto = new UserDto
+            {
+                Id = user.Id,
+                Nome = user.Name,
+                Email = user.Email
+            };
+
+            var response = new UserResponse
+            {
+                Message = "Usuário criado com sucesso!",
+                User = userDto
+            };
+
+            return Ok(response);
         }
     }
 }
