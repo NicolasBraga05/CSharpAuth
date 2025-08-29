@@ -44,3 +44,11 @@ C:\projetos\CSharpAuth\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\projetos\CSharpAuth\bin\Debug\net9.0\MySqlConnector.dll
 C:\projetos\CSharpAuth\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\projetos\CSharpAuth\bin\Debug\net9.0\System.CodeDom.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\projetos\CSharpAuth\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
